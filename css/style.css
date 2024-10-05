@@ -1,43 +1,49 @@
-/* Custom Styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
-h1,h4{
-    font-weight: 700;
+
+h1,
+h4,h5,h2 {
+    font-weight: 600;
 }
+
 .hero {
     height: 100vh;
-    background-image: url('image.jpeg'); /* Replace with actual image */
+    background-image: url('image.jpeg');
+    /* Replace with actual image */
     background-size: cover;
     background-position: center;
 }
 
-.middile-section{
+.middile-section {
     margin-top: 5%;
     height: 700px;
 
-        background: #f6eaea78;
+    background: #f6eaea78;
 
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
 }
-.middile-section .top{
+
+.middile-section .top {
     height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .middile-section .bottom {
     height: 70%;
     width: 100%;
     display: flex;
 }
+
 .middile-section .bottom .left {
     width: 40%;
     display: flex;
@@ -46,27 +52,31 @@ h1,h4{
     align-items: start;
     padding: 0 2%;
 }
-.middile-section .bottom .right{
+
+.middile-section .bottom .right {
     height: 100%;
     width: 60%;
-    background-image: url('image.jpeg'); /* Replace with actual image */
+    background-image: url('building.jpeg');
+    /* Replace with actual image */
     background-size: cover;
     background-position: center;
 }
 
-.middile-section .form{
+.middile-section .form {
     justify-content: center;
     align-items: center;
     height: 60%;
 }
-.middile-section .form  form {
+
+.middile-section .form form {
     border: 1px solid #bb9b9b;
     padding: 5%;
 }
-.middile-section .form  form input,button{
+
+.middile-section .form form input,
+button {
     margin: 5px;
 }
-
 
 
 .footer {
@@ -74,60 +84,65 @@ h1,h4{
     color: #fff;
 
     text-align: center;
-  }
-  
-  .footer-content {
+}
+
+.footer-content {
     display: flex;
     justify-content: space-between;
     padding: 0 22px;
     padding-top: 10px;
 }
-  
-  .footer-logo {
+
+.footer-logo {
     margin-right: 20px;
-  }
-  .footer-links  ul{
+}
+
+.footer-links ul {
     display: flex;
-  }  
-  .footer-links ul {
+}
+
+.footer-links ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .footer-links li {
+}
+
+.footer-links li {
     /* margin-bottom: 10px; */
     margin: 0 8px;
     margin-bottom: 10px;
     text-align: justify;
 }
-  .footer-links li ul {
+
+.footer-links li ul {
     display: flex;
     flex-direction: column;
-  }
-  .footer-links li ul li a{
+}
+
+.footer-links li ul li a {
     text-decoration: none;
     color: wheat;
-  }
-  
-  .footer-copyright .copyright{
-    margin: 0;  
-    /* color: red; */
-  }
-  .footer-social a {
-    margin-right: 10px;
-  }
+}
 
-  .footer-social a i{
+.footer-copyright .copyright {
+    margin: 0;
+}
+
+.footer-social a {
+    margin-right: 10px;
+}
+
+.footer-social a i {
     color: #9a7777;
 
     padding: 6px;
     border-radius: 27%;
 }
-  .footer-buttons {
+
+.footer-buttons {
     display: flex;
     flex-direction: column;
 }
-  
+
 .footer-copyright {
     display: flex;
     justify-content: space-between;
@@ -136,7 +151,7 @@ h1,h4{
     font-size: 14px;
     margin: 0 22px;
     border-top: 1px solid;
-}  
+}
 
 
 @media screen and (max-width: 770px) {
@@ -144,36 +159,41 @@ h1,h4{
     .hero {
         height: 50vh;
     }
-.middile-section{
-    height: auto;
-    padding: 1%;
-}
-.middile-section .bottom {
-   
-    display: block;
-}
-.middile-section .bottom .right {
-    height: 250px;
-    width: 100%;
 
-}
-.middile-section .bottom .left {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
+    .middile-section {
+        height: auto;
+        padding: 1%;
+    }
 
-form{
-    margin: 5%;
-}
+    .middile-section .bottom {
 
-.footer-content {
+        display: block;
+    }
 
-    flex-wrap: wrap;
-}
-.footer-buttons {
-    display: block;
-}
+    .middile-section .bottom .right {
+        height: 250px;
+        width: 100%;
+
+    }
+
+    .middile-section .bottom .left {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    form {
+        margin: 5%;
+    }
+
+    .footer-content {
+
+        flex-wrap: wrap;
+    }
+
+    .footer-buttons {
+        display: block;
+    }
 }
