@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif !important;
+    
 }
+
 
 h1,
 h4,h5,h2 {
@@ -130,14 +132,6 @@ button {
 .footer-social a {
     margin-right: 10px;
 }
-
-.footer-social a i {
-    color: #9a7777;
-
-    padding: 6px;
-    border-radius: 27%;
-}
-
 .footer-buttons {
     display: flex;
     flex-direction: column;
@@ -151,6 +145,34 @@ button {
     font-size: 14px;
     margin: 0 22px;
     border-top: 1px solid;
+}
+
+    /* THIS SECTION IS USED TO DISPLAY ICONS  */
+
+.footer-social a::before {
+    display: inline-block;
+}
+.footer-social a {
+    position: relative;
+    text-decoration: none; 
+    color: wheat; 
+}
+
+.footer-social a::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09a";
+    font-size: 24px;
+    margin-right: 8px;
+    color: #9a7777;
+    display: inline-block;
+}
+
+.footer-social a:nth-child(2)::before {
+    content: "\f099";
+}
+
+.footer-social a:nth-child(3)::before {
+    content: "\f09b";
 }
 
 
